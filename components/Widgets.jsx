@@ -3,14 +3,15 @@ import {
   EllipsisHorizontalIcon,
   VideoCameraIcon,
 } from "@heroicons/react/24/solid";
+import Contact from "./Contact";
 const contacts = [
-  { src: "https://links.papareact.com/f0p", name: "Jeff Bezoz" },
-  { src: "https://links.papareact.com/kxk", name: "Elon Musk" },
-  { src: "https://links.papareact.com/zvy", name: "Bill Gates" },
-  { src: "https://links.papareact.com/snf", name: "Mark Zuckerberg" },
-  { src: "https://links.papareact.com/d0c", name: "Harry Potter" },
-  { src: "https://links.papareact.com/6gg", name: "The Queen" },
-  { src: "https://links.papareact.com/r57", name: "James Bond" },
+  { src: "https://links.papareact.com/f0p", id: 1, name: "Jeff Bezoz" },
+  { src: "https://links.papareact.com/kxk", id: 2, name: "Elon Musk" },
+  { src: "https://links.papareact.com/zvy", id: 3, name: "Bill Gates" },
+  { src: "https://links.papareact.com/snf", id: 4, name: "Mark Zuckerberg" },
+  { src: "https://links.papareact.com/d0c", id: 5, name: "Harry Potter" },
+  { src: "https://links.papareact.com/6gg", id: 6, name: "The Queen" },
+  { src: "https://links.papareact.com/r57", id: 7, name: "James Bond" },
 ];
 
 const Widgets = () => {
@@ -24,6 +25,9 @@ const Widgets = () => {
           <EllipsisHorizontalIcon className="h-6" />
         </div>
       </div>
+      {contacts.map((contact) => (
+        <Contact key={contact.id} src={contact.src} name={contact.name} />
+      ))}
     </div>
   );
 };
