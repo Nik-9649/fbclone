@@ -12,7 +12,7 @@ export default function Home({ posts }) {
   const { data: session } = useSession();
   if (!session) return <Login />;
   return (
-    <div className="h-auto bg-gray-100">
+    <div className="h-screen bg-gray-100 overflow-hidden">
       <Head>
         <title>Facebook</title>
       </Head>
@@ -20,11 +20,11 @@ export default function Home({ posts }) {
       <Header />
       <main className="flex">
         {/* Sidebar */}
-        <Sidebar className="h-screen" />
+        <Sidebar />
         {/* Feed */}
         <Feed posts={posts} />
         {/* Widgets */}
-        <Widgets className="flex-grow overflow-y-auto h-screen" />
+        <Widgets className="flex-grow overflow-y-auto" />
       </main>
     </div>
   );

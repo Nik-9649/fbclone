@@ -12,12 +12,11 @@ const contacts = [
   { src: "https://links.papareact.com/d0c", id: 5, name: "Harry Potter" },
   { src: "https://links.papareact.com/6gg", id: 6, name: "The Queen" },
   { src: "https://links.papareact.com/r57", id: 7, name: "James Bond" },
-  { src: "https://links.papareact.com/r57", id: 8, name: "James Bond" },
 ];
 
 const Widgets = () => {
   return (
-    <div className="hidden flex-grow lg:flex flex-col w-60 p-2 mt-5">
+    <div className="hidden lg:flex flex-col flex-grow overflow-y-auto w-60 p-2 mt-5">
       <div className="flex justify-between items-center text-gray-500 mb-5">
         <h2 className="text-xl">Contacts</h2>
         <div className="flex space-x-2">

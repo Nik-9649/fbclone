@@ -18,7 +18,7 @@ export default function Home({ posts }) {
       </Head>
       {/* Header */}
       <Header />
-      <main className="flex">
+      <main className="flex scrollbar-hide">
         {/* Sidebar */}
         <Sidebar className="h-screen" />
         {/* Feed */}

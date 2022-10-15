@@ -24,7 +24,7 @@ export default function Home({ posts }) {
         {/* Feed */}
         <Feed posts={posts} />
         {/* Widgets */}
-        <Widgets className="flex-grow overflow-y-auto h-screen" />
+        <Widgets className="flex-grow overflow-y-auto h-screen scrollbar-hide" />
       </main>
     </div>
   );

@@ -12,7 +12,7 @@ export default function Home({ posts }) {
   const { data: session } = useSession();
   if (!session) return <Login />;
   return (
-    <div className="h-auto bg-gray-100">
+    <div className="h-auto bg-gray-100 ">
       <Head>
         <title>Facebook</title>
       </Head>
